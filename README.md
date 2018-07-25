@@ -117,10 +117,10 @@ public class Controller {
     public State handle(State currentState,String eventName){
         if(currentState.hasTransition(eventName)){
             return currentState.targetState(eventName);
-    }
-    else
-        return currentState;
-    }
+        }
+        else
+            return currentState;
+        }
 }
 ```
 `Controller`为控制模块，这里也做了部分简化，主要保留了状态转化模块，输入原状态和转换条件，如果判断转换成立，则返回转换后的状态。
