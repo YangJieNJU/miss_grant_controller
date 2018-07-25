@@ -10,19 +10,8 @@ public class Transition {
         this.target = target;
     }
 
-    public State getSource() {
-        return source;
-    }
-
-    public Event getTrigger() {
-        return trigger;
-    }
-
     public State getTarget() {
         return target;
     }
 
-    public String getEventCode(){
-        return trigger.getCode();
-    }
 }
